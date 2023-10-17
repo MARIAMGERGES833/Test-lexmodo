@@ -1,0 +1,529 @@
+
+
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+/*fooooooooooooont
+font-family: 'Rubik', sans-serif;*/
+
+
+/*---global------*/
+:root {
+    --color-black: black;
+    --color-white: white;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+}
+
+h2 {
+    color: #202223;
+    font-family: Rubik;
+
+}
+
+ul li {
+    list-style: none;
+}
+
+ul {
+    padding: 0;
+}
+
+.header {
+    height: 91px;
+}
+
+section {
+    background-color: rgb(242, 245, 250);
+}
+
+.container1 {
+    padding-top: 77px;
+    width: 90% !important;
+    margin: auto;
+}
+
+/* ===========start input search & sort =================*/
+
+input {
+    height: 50px;
+    font-size: 14px;
+    background-image: url(https://cdn2.hubspot.net/hubfs/4004166/bioticresearch_website_assets/images/search_icon.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 40px;
+    background-color: var(--color-white);
+    border: 1px solid var(--color-black);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    /* -webkit-appearance: none; */
+}
+
+.form-control:focus {
+    padding-left: 40px;
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    -webkit-box-shadow: 0 0 0 0.25rem transparent;
+            box-shadow: 0 0 0 0.25rem transparent;
+}
+
+.form-control {
+    padding-left: 40px;
+}
+
+.form-control:focus ::-webkit-input-placeholder {
+    padding-left: 0px;
+}
+
+.form-control:focus ::-moz-placeholder {
+    padding-left: 0px;
+}
+
+.form-control:focus :-ms-input-placeholder {
+    padding-left: 0px;
+}
+
+.form-control:focus ::-ms-input-placeholder {
+    padding-left: 0px;
+}
+
+.form-control:focus ::placeholder {
+    padding-left: 0px;
+}
+
+::-webkit-input-placeholder {
+    color: var(--color-black) !important;
+}
+
+::-moz-placeholder {
+    color: var(--color-black) !important;
+}
+
+:-ms-input-placeholder {
+    color: var(--color-black) !important;
+}
+
+::-ms-input-placeholder {
+    color: var(--color-black) !important;
+}
+
+::placeholder {
+    color: var(--color-black) !important;
+}
+
+/* .select {
+    padding: 10px;
+}
+
+.select:focus {
+    padding-left: 10px;
+} */
+
+
+
+.details {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+
+    -webkit-box-pack: justify;
+
+        -ms-flex-pack: justify;
+
+            justify-content: space-between;
+margin-bottom: 70px;
+}
+.dropdown{
+    position: absolute;
+    bottom: -100px;
+    right: -25px;
+    z-index: 3;
+    margin-right: 25px;
+}
+
+.btn-check:checked+.btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check)+.btn:active {
+    color: var(--color-black);
+    background-color: var(--color-white);
+    border-color: transparent;
+}
+
+.btn-secondary {
+    --bs-btn-color: var(--color-black);
+    --bs-btn-bg: var(--color-white);
+    --bs-btn-border-color: transparent;
+    --bs-btn-hover-color: var(--color-black);
+    --bs-btn-hover-bg: var(--color-white);
+    --bs-btn-hover-border-color: transparent;
+}
+
+.dropdown-menu {
+    --bs-dropdown-border-color: transparent;
+    --bs-dropdown-min-width: 100%;
+}
+
+
+
+
+/* ===========end input search & sort =================*/
+
+
+
+
+/* ===========start customers =================*/
+
+h2+p {
+    color: #909090;
+    font-family: Rubik;
+}
+
+.card {
+    --bs-card-border-color: none;
+}
+
+p:nth-child(3) {
+    color: #51C5FF;
+    font-family: Rubik;
+    margin: 0;
+}
+
+.caption-cutsom {
+    padding: 20px 20px 0 20px;
+}
+
+
+
+ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #202223;
+    font-family: Rubik;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+
+
+}
+
+ul li p {
+    margin: 0;
+}
+
+.icons {
+    padding: 20px;
+}
+
+.listOfAddress {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+}
+
+.icons .icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+
+
+
+
+
+
+@media screen and (min-width:768px) {
+    .inputsearch {
+        width: 548px !important;
+    }
+}
+@media screen and (max-width:768px) {
+    .inputsearch {
+        width: 88% !important;
+        margin: auto;
+    }
+    .dropdown{
+
+        right: 0px;
+}}
+
+@media screen and (max-width:992px) {
+    .container {
+        padding-top: 22px;
+    }
+
+    .details {
+        height: 65px;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        margin-bottom: 90px;
+    }
+
+    .form-group {
+        margin: 22px 0 22px auto;
+    }
+
+    .pic img {
+        width: 110px;
+        height: 110px;
+    }
+
+}
+
+
+
+
+@media screen and (max-width:768px) {
+    .select{
+        margin-right:25px;
+    }
+    .header {
+        height: 65px;
+    }
+
+    h2 {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 28px;
+    }
+
+    h2+p {
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 25px;
+
+    }
+
+    p:nth-child(3) {
+        width: 225px;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 18px;
+        padding-right: 20px;
+    }
+
+    ul li {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22.5px;
+        margin-bottom: 10px;
+
+    }
+
+    .card {
+        width: 380px;
+        height: 410px;
+        border-radius: 8px;
+        background: var(--surface-default, #FFF);
+    }
+
+    .card .pic img {
+        border-radius: 50%;
+        width: 106px;
+        height: 109px;
+    }
+
+    .caption {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: row-reverse;
+                flex-direction: row-reverse;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        margin: 0 20px;
+        padding: 20px 0;
+        border-bottom: 1px solid rgb(232, 232, 232);
+    }
+
+    .caption-cutsom {
+        padding: 0;
+    }
+
+    .listOfAddress {
+        width: 282px;
+    }
+
+    .icons .icon {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+    }
+
+   
+}
+
+
+@media screen and (min-width:769px) and (max-width:992px) {
+    .header {
+        height: 65px;
+    }
+
+    h2 {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 28px;
+    }
+
+    h2+p {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 25px;
+
+    }
+
+    p:nth-child(3) {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 18px;
+    }
+
+    ul li {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22.5px;
+        margin-bottom: 10px;
+    }
+
+    .card {
+        height: 590px;
+    }
+
+
+    .listOfAddress {
+        width: 282px;
+    }
+
+    .icons .icon {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+    }
+
+
+    .pic img {
+        height: 200px;
+    }
+}
+
+
+@media screen and (min-width:993px) and (max-width:1200px) {
+    .header {
+        height: 65px;
+    }
+
+    h2 {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 28px;
+    }
+
+    h2+p {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 25px;
+
+    }
+
+    p:nth-child(3) {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 18px;
+    }
+
+    ul li {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 22.5px;
+        margin-bottom: 10px;
+
+    }
+
+    .card {
+        height: 640px;
+    }
+
+
+    .listOfAddress {
+        width: 282px;
+    }
+
+    .icons .icon {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+    }
+
+   }
+
+@media screen and (min-width:1201px) {
+    .header {
+        height: 91px;
+    }
+
+    h2 {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 28px;
+    }
+
+    h2+p {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 25px;
+    }
+
+    p:nth-child(3) {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 25px;
+    }
+
+    ul li {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 25px;
+        margin-bottom: 13px;
+    }
+
+    .card {
+        height: 725px;
+    }
+
+    .icons .icon {
+        width: 25px;
+        height: 25px;
+        margin-right: 10px;
+    }
+
+
+}

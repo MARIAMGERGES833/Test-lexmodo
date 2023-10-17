@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <!---======= favicon ===========-->
+    <link rel="shortcut icon"
+        href="https://cdn2.hubspot.net/hubfs/4004166/bioticresearch_website_assets/images/search_icon.png"
+        type="image/x-icon">
+    <!---======= font ===========-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;800&display=swap" rel="stylesheet">
+
+    <!---======= link bootstrap ===========-->
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+
+    <!---======= link fontawesome ===========-->
+    <link rel="stylesheet" href="CSS/all.min.css">
+
+    <!---======= link css stylesheet ===========-->
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <div class="header"> </div>
+
+    <section class="pb-5">
+
+        <!-------------start input search & sort--------------->
+        <div class="container1">
+            <div>
+
+                <form class="details">
+                    <input id="search" class="no-submit form-control inputsearch" type="search"
+                        placeholder="Find customers" name="search" />
+                    <div class="form-group position-relative">
+                        <!-- <select class="form-control select" id="sortSelect">
+                                <option selected disabled>Filter by Name (A-Z)</option>
+                                <option value="az">Name (A-Z)</option>
+                                <option value="za">Name (Z-A)</option>
+                            </select> -->
+                        <div class="select"
+                            style="width: 100%; height: 100%; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 5px; display: inline-flex">
+                            <div
+                                style="width: 222px; height: 50px; padding-top: 8px; padding-bottom: 8px; padding-left: 16px; padding-right: 12px; background: white; border-radius: 8px; overflow: hidden; flex-direction: column; justify-content: center; align-items: center; gap: 10px; display: flex">
+                                <div
+                                    style="justify-content: flex-start; align-items: flex-start; gap: 24px; display: inline-flex">
+                                    <div
+                                        style="color: #202223; font-size: 16px; font-family: Rubik; font-weight: 400; line-height: 20px; word-wrap: break-word">
+                                        Filter by Name (A-Z) </div>
+                                    <i id="chooseSort" class="fa-solid fa-caret-down"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="dropdown" class="dropdown d-none"
+                            style="height: 100px; background: white; box-shadow: -12px 19px 34px -2px rgba(185.69, 200.73, 208.25, 0.33); border-radius: 8px; flex-direction: column; justify-content: center; align-items: flex-start; display: flex">
+                            <div
+                                style="width: 222px; height: 50px; padding-top: 12px; padding-bottom: 19px; padding-left: 18px; padding-right: 117px; border-radius: 4px; justify-content: flex-start; align-items: center; display: inline-flex">
+                                <div style="width: 87px; height: 19px; color: #202223; font-size: 16px; font-family: Rubik; font-weight: 400; line-height: 25px; word-wrap: break-word"
+                                    id="AZ">Name (A-Z)</div>
+                            </div>
+                            <div
+                                style="width: 222px; height: 50px; padding-top: 12px; padding-bottom: 19px; padding-left: 18px; padding-right: 117px; border-radius: 4px; justify-content: flex-start; align-items: center; display: inline-flex">
+                                <div style="width: 87px; height: 19px; color: #202223; font-size: 16px; font-family: Rubik; font-weight: 400; line-height: 25px; word-wrap: break-word"
+                                    id="ZA">Name (Z-A)</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+                <h3 id="alert" class="alert alert-danger d-none text-center">“no customer(s) found with the
+                    search criteria.”
+                </h3>
+            </div>
+
+            <!-------------start input search & sort--------------->
+
+            <!-------------start customers--------------->
+
+            <div class="customers">
+                <div class="row gy-5" id="demo">
+                </div>
+            </div>
+            <!-------------end customers--------------->
+
+
+        </div>
+
+
+    </section>
+
+
+
+
+
+
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/index.js" type="module"></script>
+</body>
+
+</html>
