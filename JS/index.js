@@ -29,7 +29,7 @@ searchKey.addEventListener("keyup", ()=> {
 async function getData() {
     let result = await fetch('https://jsonplaceholder.typicode.com/users');
     allData = await result.json();
-    console.log(allData);
+    // console.log(allData);
     displayData(allData);
 }
 getData()
